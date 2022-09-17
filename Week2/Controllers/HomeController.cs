@@ -41,6 +41,10 @@ namespace Week2.Controllers
         {
             return "xyzlmno9807.gmail.com";
         }
+        public string Collaborator_Email()
+        {
+            return "abhishek@gmail.com";
+        }
 
         public IActionResult HtmlTester()
         {
