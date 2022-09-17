@@ -37,6 +37,10 @@ namespace Week2.Controllers
         {
             return "C0827426@mylabton.ca";
         }
+        public string Secondary_Email()
+        {
+            return "xyzlmno9807.gmail.com";
+        }
 
         public IActionResult HtmlTester()
         {
