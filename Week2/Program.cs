@@ -1,4 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Week2.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<Week2Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Week2Context") ?? throw new InvalidOperationException("Connection string 'Week2Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
